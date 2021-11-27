@@ -17,4 +17,4 @@ RUN mkdir /usr/local/tomcat/webapps/reve/
 WorkDIR /usr/local/tomcat/webapps/reve/
 COPY index.html .
 EXPOSE 80
-CMD ["/bin/bash",/usr/local/tomcat/bin/startup.sh"]
+CMD ["/usr/local/tomcat/bin/catalina.sh", "run"]
